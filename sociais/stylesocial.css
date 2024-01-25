@@ -51,3 +51,11 @@ footer {
 footer p {
     display: inline-block;
 }
+@media screen and (max-width: 600px) {
+    #container {
+        margin: 10% 2%; /* Reduz a margem para telas menores */
+    }
+    td {
+        width: 50%; /* Faz com que cada célula da tabela ocupe metade da largura da tela em telas menores */
+    }
+}
