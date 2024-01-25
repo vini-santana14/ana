@@ -2,32 +2,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-image: linear-gradient(to left, transparent, rgba(174, 0, 0, 0.745), rgba(207, 48, 180, 0.712));
     font-family: 'Single Day', cursive;
 }
 
-
-
 .container {
     display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha em telas menores */
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.666);
-    margin: 10% 30% 6% 30%;
-    border-radius: 10%;
+    margin: 10% 20% 2%;
+    border-radius: 10px;
+    padding: 10px;
 }
-
 
 table {
     border-collapse: collapse;
+    width: 100%;
 }
-
 
 td {
     padding: 10px;
@@ -35,37 +34,45 @@ td {
 }
 
 td img {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* Mantém o tamanho das imagens pequeno */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 td p {
     margin-top: 5px;
+    font-size: 14px;
 }
+
 td p a {
     text-decoration: none;
     color: rgba(126, 0, 105, 0.779);
-
 }
-td p a:visited {
-    color: rgba(126, 0, 105, 0.779);
-}
-
-
 
 footer {
-    margin-top: 8%;
+    margin-top: 6%;
     text-align: center;
 }
+
 footer a {
     text-decoration: none;
     font-size: 1.2em;
     display: inline-block;
     color: rgba(65, 0, 0, 0.779);
 }
+
 footer a:hover {
-    border-radius: 20%;
+    border-radius: 30%;
     border: 1px solid transparent;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.482);
     transition: 0.1s;
+    padding: 0px 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 10% 2%; /* Reduz a margem para telas menores */
+    }
+    td {
+        width: 50%; /* Faz com que cada célula da tabela ocupe metade da largura da tela em telas menores */
+    }
 }
