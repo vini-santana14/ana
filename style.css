@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to left, transparent, rgba(174, 0, 0, 0.745), rgba(207, 48, 180, 0.712));
+    font-family: 'Single Day', cursive;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.666);
+    margin: 10% 30% 6% 30%;
+    border-radius: 10%;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+td img {
+    width: 100px;
+    height: 100px;
+}
+
+td p {
+    margin-top: 5px;
+}
+td p a {
+    text-decoration: none;
+    color: rgba(126, 0, 105, 0.779);
+
+}
+td p a:visited {
+    color: rgba(126, 0, 105, 0.779);
+}
+
+
+
+footer {
+    margin-top: 8%;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    color: rgba(65, 0, 0, 0.779);
+}
+footer a:hover {
+    border-radius: 20%;
+    border: 1px solid transparent;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.482);
+    transition: 0.1s;
+}
